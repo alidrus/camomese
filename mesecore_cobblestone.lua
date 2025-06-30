@@ -1,10 +1,12 @@
+local S = minetest.get_translator("camomese")
+
 core.register_node("camomese:mesecore_cobblestone", {
     description = S("Mese Core Cobblestone"),
     tiles = {"camomese_mesecore_cobblestone.png"},
 	is_ground_content = false,
 	inventory_image = minetest.inventorycube("camomese_mesecore_cobblestone.png"),
 	groups = {cracky = 3},
-	sounds = mesecon.node_sound.stone,
+	sounds = default.node_sound_stone_defaults(),
 	mesecons = {conductor = {
 		state = mesecon.state.off,
 		rules = mesecon.rules.alldirs,
@@ -14,11 +16,9 @@ core.register_node("camomese:mesecore_cobblestone", {
 })
 
 core.register_node("camomese:mesecore_cobblestone_on", {
-    description = S("Mese Core Cobblestone"),
     tiles = {"camomese_mesecore_cobblestone_on.png"},
 	is_ground_content = false,
-	groups = {cracky = 3},
-	sounds = mesecon.node_sound.stone,
+	sounds = default.node_sound_stone_defaults(),
 	mesecons = {conductor = {
 		state = mesecon.state.on,
 		rules = mesecon.rules.alldirs,
