@@ -1,6 +1,6 @@
 local S = minetest.get_translator("camomese")
 
-core.register_node("camomese:mesecore_cobblestone", {
+minetest.register_node("camomese:mesecore_cobblestone", {
     description = S("Mese Core Cobblestone"),
     tiles = {"camomese_mesecore_cobblestone.png"},
 	is_ground_content = false,
@@ -15,7 +15,7 @@ core.register_node("camomese:mesecore_cobblestone", {
 	on_blast = mesecon.on_blastnode,
 })
 
-core.register_node("camomese:mesecore_cobblestone_on", {
+minetest.register_node("camomese:mesecore_cobblestone_on", {
     tiles = {"camomese_mesecore_cobblestone_on.png"},
 	is_ground_content = false,
 	sounds = default.node_sound_stone_defaults(),
@@ -27,11 +27,11 @@ core.register_node("camomese:mesecore_cobblestone_on", {
 	on_blast = mesecon.on_blastnode,
 })
 
-core.register_craft({
+minetest.register_craft({
 	output = "camomese:mesecore_cobblestone 8",
 	recipe = {
-		{"default:cobblestone", "default:cobblestone", "default:cobblestone"},
-		{"default:cobblestone", "default:mese_crystal_fragment", "default:cobblestone"},
-		{"default:cobblestone", "default:cobblestone", "default:cobblestone"},
+		{"default:cobble", "default:cobble", "default:cobble"},
+		{"default:cobble", "default:mese_crystal_fragment", "default:cobble"},
+		{"default:cobble", "default:cobble", "default:cobble"},
 	}
 })
