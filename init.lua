@@ -2,7 +2,7 @@
 
 local path = minetest.get_modpath(minetest.get_current_modname()) .. "/"
 
--- add blocks
+-- add mesecore blocks
 dofile(path .. "mesecore_stone.lua")
 dofile(path .. "mesecore_cobble.lua")
 dofile(path .. "mesecore_stonebrick.lua")
