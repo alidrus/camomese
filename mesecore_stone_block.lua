@@ -12,15 +12,17 @@ minetest.register_node("camomese:mesecore_stone_block", {
 	mesecons = {conductor = {
 		state = mesecon.state.off,
 		rules = mesecon.rules.alldirs,
-		onstate = "camomese:mesecore_stone_on"
+		onstate = "camomese:mesecore_stone_block_on"
 	}},
 	on_blast = mesecon.on_blastnode,
 })
 
 -- Register the Mese Core Stone Block (on state) node
-minetest.register_node("camomese:mesecore_stone_on", {
-    tiles = {"camomese_mesecore_stone_on.png"},
+minetest.register_node("camomese:mesecore_stone_block_on", {
+    tiles = {"camomese_mesecore_stone_block_on.png"},
 	is_ground_content = false,
+	groups = {cracky = 3},
+	drop = "camomese:mesecore_stone_block",
 	sounds = default.node_sound_stone_defaults(),
 	mesecons = {conductor = {
 		state = mesecon.state.on,
