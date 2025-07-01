@@ -1,7 +1,6 @@
 -- Translation support
 local S = minetest.get_translator("camomese")
 
-
 -- Register the Mese Core Cobblestone (off state) node
 minetest.register_node("camomese:mesecore_cobble", {
     description = S("Mese Core Cobblestone"),
