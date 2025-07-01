@@ -1,7 +1,5 @@
 -- Camoflaged Mesecons (camomese) Mod by WoGoMo
 
--- Translation support
-
 local path = minetest.get_modpath(minetest.get_current_modname()) .. "/"
 
 -- add blocks
