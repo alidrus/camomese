@@ -7,7 +7,7 @@ minetest.register_node("camomese:mesecore_cobble", {
     tiles = {"camomese_mesecore_cobble.png"},
 	is_ground_content = false,
 	inventory_image = minetest.inventorycube("camomese_mesecore_cobble.png"),
-	groups = {cracky = 3},
+	groups = {cracky = 3, stone = 1},
 	sounds = default.node_sound_stone_defaults(),
 	mesecons = {conductor = {
 		state = mesecon.state.off,
@@ -21,7 +21,7 @@ minetest.register_node("camomese:mesecore_cobble", {
 minetest.register_node("camomese:mesecore_cobble_on", {
     tiles = {"camomese_mesecore_cobble_on.png"},
 	is_ground_content = false,
-	groups = {cracky = 3},
+	groups = {cracky = 3, stone = 1},
 	drop = "camomese:mesecore_cobble",
 	sounds = default.node_sound_stone_defaults(),
 	mesecons = {conductor = {
