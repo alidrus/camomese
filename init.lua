@@ -1,6 +1,6 @@
 -- Camouflaged Mesecons (camomese) Mod by WoGoMo
 
-local version = "0.1.12"
+local version = "0.1.13"
 
 camomese = {  }
 
