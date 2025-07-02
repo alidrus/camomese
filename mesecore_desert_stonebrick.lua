@@ -4,9 +4,9 @@ local S = minetest.get_translator("camomese")
 -- Register the Mese Core Desert Stone Brick (off state) node
 minetest.register_node("camomese:mesecore_desert_stonebrick", {
     description = S("Mese Core Desert Stone Brick"),
-    tiles = {"camomese_mesecore_stone_brick.png"},
+    tiles = {"camomese_mesecore_desert_stone_brick.png"},
 	is_ground_content = false,
-	inventory_image = minetest.inventorycube("camomese_mesecore_stone_brick.png"),
+	inventory_image = minetest.inventorycube("camomese_mesecore_desert_stone_brick.png"),
 	groups = {cracky = 2, stone = 1},
 	sounds = default.node_sound_stone_defaults(),
 	mesecons = {conductor = {
@@ -19,7 +19,7 @@ minetest.register_node("camomese:mesecore_desert_stonebrick", {
 
 -- Register the Mese Core Desert Stone Brick (on state) node
 minetest.register_node("camomese:mesecore_desert_stonebrick_on", {
-    tiles = {"camomese_mesecore_stone_brick_on.png"},
+    tiles = {"camomese_mesecore_desert_stone_brick_on.png"},
 	is_ground_content = false,
 	groups = {cracky = 2, stone = 1},
 	drop = "camomese:mesecore_desert_stonebrick",
