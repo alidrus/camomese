@@ -1,8 +1,16 @@
--- Camoflaged Mesecons (camomese) Mod by WoGoMo
+-- Camouflaged Mesecons (camomese) Mod by WoGoMo
+
+local version = "0.1.12"
+
+camomese = {  }
+
+function camomese.version ()
+	return version
+end
 
 local path = minetest.get_modpath(minetest.get_current_modname()) .. "/"
 
--- add mesecore blocks
+-- add mese core nodes
 dofile(path .. "mesecore_stone.lua")
 dofile(path .. "mesecore_cobble.lua")
 dofile(path .. "mesecore_stonebrick.lua")
